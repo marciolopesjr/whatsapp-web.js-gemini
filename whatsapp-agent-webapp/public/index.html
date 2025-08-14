@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Agent</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>WhatsApp Agent</h1>
+    <div id="status-container">
+        <p>Status: <span id="status">Disconnected</span></p>
+    </div>
+    <div id="qr-container">
+        <img id="qr" src="" alt="QR Code">
+    </div>
+    <div id="send-container">
+        <h2>Send Message</h2>
+        <form id="send-form">
+            <input type="text" id="number" placeholder="Enter phone number (e.g., 1234567890)" required>
+            <input type="text" id="message" placeholder="Enter your message" required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <div id="messages-container">
+        <h2>Messages</h2>
+        <ul id="messages"></ul>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>

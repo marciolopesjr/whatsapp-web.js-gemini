@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+#qr-container {
+    margin-bottom: 20px;
+}
+
+#send-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#send-form input {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+#messages {
+    list-style-type: none;
+    padding: 0;
+}
+
+#messages li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
